@@ -14,29 +14,53 @@
     		
 			  	<div class="panel-heading">
 			  	
-			    	<h3 class="panel-title"><center><b>Please Add Category</b></center></h3>
+			    	<h3 class="panel-title"><center><b>Please Add Task</b></center></h3>
 			    	
 			 	</div>
 			 	
 			  	<div class="panel-body">
 			  	
-			    	<form action="<c:url value="/AddCategory"/>" method="post">
+			    	<form action="<c:url value="/AddTask"/>" method="post">
 			    	
                     <fieldset>
                     
 			    	  	<div class="form-group">
 			    	  	
-			    		    <center><b>Category Name</b></center><input class="form-control" placeholder="Category Name" name="catgName" type="text">
+			    		    <center><b>Title</b></center><input class="form-control" placeholder="title" name="tasktitle" type="text">
 			    		    
 			    		</div>
 			    		
 			    		<div class="form-group">
 			    		
-			    			<center><b>Category Description</b></center><input class="form-control" placeholder="Category Description" name="catgDesc" type="text" value="">
+			    			<center><b>Description</b></center><input class="form-control" placeholder="description" name="taskdescription" type="text" value="">
 			    			
 			    		</div>
 			    		
-			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Add Category">
+			    		<div class="form-group">
+			    		
+			    			<center><b>Priority</b></center><input class="form-control" placeholder="priority" name="taskpriority" type="text" value="">
+			    			
+			    		</div>
+			    		
+			    		<div class="form-group">
+			    		
+			    			<center><b>Employee</b></center><input class="form-control" placeholder="employee" name="taskemployee" type="text" value="">
+			    			
+			    		</div>
+			    		
+			    		<div class="form-group">
+			    		
+			    			<center><b>Duedate</b></center><input class="form-control" placeholder="duedate" name="taskduedate" type="text" value="">
+			    			
+			    		</div>
+			    		
+			    		<div class="form-group">
+			    		
+			    			<center><b>Status</b></center><input class="form-control" placeholder="status" name="taskstatus" type="text" value="">
+			    			
+			    		</div>
+			    		
+			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Add Task">
 			    		
 			    	</fieldset>
 			    	
@@ -58,31 +82,37 @@
 
     <tr>
     
-      <td> <center><b>Category Id &nbsp</b></center></td>
+      <td> <center><b>Id &nbsp</b></center></td>
       
-      <td><center><b> Category Name &nbsp</b></center></td>
+      <td><center><b> Title &nbsp</b></center></td>
       
-      <td><center> <b>Category Description &nbsp</b></center></td>
+      <td><center> <b> Description &nbsp</b></center></td>
+      <td><center> <b> Employee &nbsp</b></center></td>
+      <td><center> <b> Priority &nbsp</b></center></td>
+      <td><center> <b> Duedate &nbsp</b></center></td>
+      <td><center> <b> Status &nbsp</b></center></td>
       
-      <td><center> <b>Perform Edit </b></center> </td>
       
-      <td><center> <b>Perform Delete </b></center> </td>
       
     </tr>
     
-   <c:forEach items = "${listCategories}" var="category" >
+   <c:forEach items = "${listTasks}" var="task" >
    
      <tr>
      
-       <td> <center> ${category.categoryId} </center> </td>
+       <td> <center> ${task.id} </center> </td>
        
-       <td> <center>  ${category.categoryName}</center> </td>
+       <td> <center>  ${task.title}</center> </td>
        
-       <td>  <center> ${category.categoryDesc} </center> </td>
+       <td>  <center> ${task.description} </center> </td>
+       <td> <center>  ${task.employee}</center> </td>
+       <td> <center>  ${task.priority}</center> </td>
+       <td> <center>  ${task.duedate}</center> </td>
+       <td> <center>  ${task.status}</center> </td>
        
-       <td> <a href="<c:url value="/editCategory/${category.categoryId}"/>" class="btn btn-success"> <center>EDIT</center> </a> </td>
+       <td> <a href="<c:url value="/editTask/${task.id}"/>" class="btn btn-success"> <center>EDIT</center> </a> </td>
        
-       <td> <a href="<c:url value="/deleteCategory/${category.categoryId}"/>" class="btn btn-danger"> <center>DELETE</center> </a> </td>
+       <td> <a href="<c:url value="/deleteTask/${task.id}"/>" class="btn btn-danger"> <center>DELETE</center> </a> </td>
        
      </tr>
      

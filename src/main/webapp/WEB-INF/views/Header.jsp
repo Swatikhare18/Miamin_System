@@ -9,7 +9,7 @@
 
 <meta charset="ISO-8859-1">
 
-<title> ${pageinfo}OnlineClothStore </title>
+<title> ${pageinfo}TaskManagementSystem </title>
 
 
 <link rel="shortcut icon" type="image/x-icon" href="https://cdn.shopify.com/shopify-marketing_assets/static/shopify-favicon.png" />
@@ -53,7 +53,7 @@ background-color: #2E8B57;
         
            <div class="navbar-header"> 
            
-               <a class="navbar-brand" href="#" > OnlineClothStore </a>
+               <a class="navbar-brand" href="#" > TaskManagementSystem </a>
                
            </div>
            
@@ -81,29 +81,24 @@ background-color: #2E8B57;
 
                  <ul class=" nav navbar-nav">
                  
-                   <li> <a href="<c:url value="/adminhome" />"> <i class='fas fa-home'></i> HOME </a></li>
+                  
                    
-                   <li> <a href="<c:url value="/product" />"> <i class='fas fa-edit'></i> MANAGE PRODUCT </a></li>
+                   <li> <a href="<c:url value="/task" />"> <i class='fas fa-edit'></i> MANAGE TASK </a></li>
                    
-                   <li> <a href="<c:url value="/category" />"> <i class='fas fa-edit'></i> MANAGE CATEGORY </a></li>
                    
-                   <li> <a href="<c:url value="/productDisplay" />"> <i class='fas fa-tags'></i> PRODUCT CATALOG </a></li>
                    
                 </ul>
                 
              </c:if> 
              
-             <c:if test="${sessionScope.role=='ROLE_CUSTOMER'}">
+             <c:if test="${sessionScope.role=='ROLE_EMPLOYEE'}">
 
                  <ul class=" nav navbar-nav">
                  
-                   <li> <a href="<c:url value="/customerhome" />"> <i class='fas fa-home'></i> HOME </a></li> 
                    
-                   <li> <a href="<c:url value="/productDisplay" />"> <i class='fas fa-tags'></i> PRODUCT CATALOG </a></li>
+                   <li> <a href="<c:url value="/task" />"> <i class='fas fa-edit'></i> MANAGE TASK </a></li>
                    
-                   <li> <a href="<c:url value="/cart" />"> <i class='fas fa-shopping-cart'></i> CART </a></li>
                    
-                   <li> <a href="<c:url value="/myorders" />"> <i class='fa fa-shopping-bag' ></i> YOUR ORDERS </a></li>
                    
                 </ul>
                 

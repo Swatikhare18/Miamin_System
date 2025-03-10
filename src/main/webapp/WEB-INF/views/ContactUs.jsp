@@ -8,11 +8,11 @@
 
 <h4 align="center" style="color:green"> <b> Contact Us On </b></h4> <br> <br>
 <h4 align="center" style="color:Turquoise"> <b> +91-9867543423 </b></h4> <br> <br>
-<h4 align="center" style="color:purple" > <b> Email-Onlineclothstore987698@gmail.com </b></h4> <br> <br>
+<h4 align="center" style="color:purple" > <b> Email-Taskmanagementsystem987698@gmail.com </b></h4> <br> <br>
 
-<span style="font-size:30px;color:green;margin-left:50px"> <b>Got a question about using Online Cloth Store? </b></span>  <br> <br>
+<span style="font-size:30px;color:green;margin-left:50px"> <b>Got a question about using Task Management System? </b></span>  <br> <br>
 
-<span style="font-size:30px;margin-left:50px"> <b> <i>The Online Cloth Store support team is available 24/7 <br>&nbsp &nbsp &nbsp by email, live chat, and phone. </i></b></span>
+<span style="font-size:30px;margin-left:50px"> <b> <i>The Task Management System support team is available 24/7 <br>&nbsp &nbsp &nbsp by email, live chat, and phone. </i></b></span>
 
 
 <div style="margin-left:800px;margin-top:-100px">

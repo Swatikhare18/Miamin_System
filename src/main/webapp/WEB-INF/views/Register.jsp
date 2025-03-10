@@ -62,7 +62,7 @@
                                     
                                        <option selected>Choose---</option>
                                        <option value="ROLE_ADMIN">ROLE_ADMIN</option>
-                                       <option value="ROLE_CUSTOMER">ROLE_CUSTOMER</option>
+                                       <option value="ROLE_EMPLOYEE">ROLE_EMPLOYEE</option>
                                        
                                         </select>
                                      </div>

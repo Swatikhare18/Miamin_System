@@ -11,41 +11,12 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import eCommerce.DAO.ProductDAO;
-import eCommerce.model.Product;
+
 
 @Controller
 
 public class UserController {
 
-	@Autowired
-	ProductDAO productDAO;
-	
-	@RequestMapping(value="/customerhome")
-	public String showUserHome(Model m, HttpSession session)
-	{
-		m.addAttribute("pageinfo" , "Customer Home-");
-		
-		List<Product> listProducts = productDAO.listProducts();
-		
-		m.addAttribute("productList", listProducts);
-		
-		return "CustomerHome";
-	}
-	
-	
-	@RequestMapping(value="/adminhome")
-	public String showAdminHome(Model m, HttpSession session)
-	{
-		m.addAttribute("pageinfo" , "Admin Home-");
-		
-		List<Product> listProducts = productDAO.listProducts();
-		
-		m.addAttribute("productList", listProducts);
-		
-		return "AdminHome";
-	}
-	
 	
 	@RequestMapping(value="/login_success")
 	public String loginCheck(Model m, HttpSession session)
@@ -80,7 +51,7 @@ public class UserController {
 			{
 				loggedIn=true;
 				
-				page="CustomerHome";
+				page="EmployeeHome";
 				
 				session.setAttribute("loggedIn", loggedIn);
 				
@@ -89,11 +60,9 @@ public class UserController {
 			}
 		}
 		
-		  m.addAttribute("pageinfo" , "Customer Home-");
+		  m.addAttribute("pageinfo" , "Employee Home-");
 		
-		  List<Product> listProducts = productDAO.listProducts();
-		
-		  m.addAttribute("productList", listProducts);
+		 
 		
 		return page;
 		

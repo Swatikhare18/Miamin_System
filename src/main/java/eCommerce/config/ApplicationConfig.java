@@ -10,10 +10,8 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import eCommerce.model.CartItem;
+
 import eCommerce.model.Category;
-import eCommerce.model.OrderDetail;
-import eCommerce.model.Product;
 import eCommerce.model.UserDetail;
 
 
@@ -31,7 +29,7 @@ public class ApplicationConfig {
 		
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		
-		dataSource.setUrl("jdbc:mysql://localhost:3306/onlineclothstore");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/task");
 		
 		dataSource.setUsername("root");
 		
@@ -58,13 +56,11 @@ public class ApplicationConfig {
 		
 		localFactory.addAnnotatedClass(Category.class);
 		
-		localFactory.addAnnotatedClass(Product.class);
+		
 		
 		localFactory.addAnnotatedClass(UserDetail.class);
 		
-		localFactory.addAnnotatedClass(CartItem.class);
 		
-		localFactory.addAnnotatedClass(OrderDetail.class);
 		
 		System.out.println("SessionFactory Obejct is Created");
 		

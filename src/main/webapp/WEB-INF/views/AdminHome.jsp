@@ -18,7 +18,7 @@
 
 <div>
 
-<center><h1 style="color:green;font-family:Comic Sans MS;"> <b> Sell & Purchase Online With Online Cloth Store </b></h1> </center>
+<center><h1 style="color:green;font-family:Comic Sans MS;"> <b> Manage Task With Task Management System </b></h1> </center>
 
 </div>
 

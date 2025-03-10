@@ -16,35 +16,60 @@
     		
 			  	<div class="panel-heading">
 			  	
-			    	<h3 class="panel-title"><center><b>Please Update Category</b></center></h3>
+			    	<h3 class="panel-title"><center><b>Please Update Task</b></center></h3>
 			    	
 			 	</div>
 			 	
 			  	<div class="panel-body">
 			    	
-			    	<form action="<c:url value="/UpdateCategory"/>" method="post"> 
+			    	<form action="<c:url value="/UpdateTask"/>" method="post"> 
 			    	
                     <fieldset>
                     
                    <div class="form-group">
                    
-			    		    <center>Category Id</center><input class="form-control" placeholder="Category Id" name="catgId" type="text" value="${category.categoryId}" readonly>
+			    		    <center>Id</center><input class="form-control" placeholder="id" name="taskid" type="text" value="${task.id}" readonly>
 			    		    
 			    		</div>
 			    		
 			    	  	<div class="form-group">
 			    	  	
-			    		    <center>Category Name</center><input class="form-control" placeholder="Category Name" name="catgName" type="text" value="${category.categoryName}">
+			    		    <center>Title</center><input class="form-control" placeholder="title" name="tasktitle" type="text" value="${task.title}">
 			    		    
 			    		</div>
 			    		
 			    		<div class="form-group">
 			    		
-			    			<center>Category Description</center><input class="form-control" placeholder="Category Description" name="catgDesc" type="text" value="${category.categoryDesc}">
+			    			<center> Description</center><input class="form-control" placeholder="description" name="taskdescription" type="text" value="${task.description}">
 			    			
 			    		</div>
 			    		
-			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Update Category">
+			    		
+			    		
+			    		<div class="form-group">
+			    		
+			    			<center> Priority</center><input class="form-control" placeholder="priority" name="taskpriority" type="text" value="${task.priority}">
+			    			
+			    		</div>
+			    		
+			    		<div class="form-group">
+			    		
+			    			<center> Employee</center><input class="form-control" placeholder="employee" name="taskemployee" type="text" value="${task.employee}">
+			    			
+			    		</div>
+			    		
+			    		<div class="form-group">
+			    		
+			    			<center> Duedate</center><input class="form-control" placeholder="duedate" name="taskduedate" type="text" value="${task.duedate}">
+			    			
+			    		</div>
+			    		
+			    		<div class="form-group">
+			    		
+			    			<center> Status</center><input class="form-control" placeholder="status" name="taskstatus" type="text" value="${task.status}">
+			    			
+			    		</div>
+			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Update Task">
 			    		
 			    	</fieldset>
 			    	
